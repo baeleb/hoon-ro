@@ -11,7 +11,7 @@ export default function Contact() {
         and infrastructure. Whether you want to talk shop or have something
         in mind, feel free to reach out.
       </p>
-      <a href="mailto:calebhro@gmail.com" className="btn btnPrimary btnLg">
+      <a href="mailto:caleb@hoon.ro" className="btn btnPrimary btnLg">
         Say Hello
       </a>
     </section>
