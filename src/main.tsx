@@ -16,7 +16,6 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/hoon-ro/' },
 );
 
 createRoot(document.getElementById('root')!).render(
