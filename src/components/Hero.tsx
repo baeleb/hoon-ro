@@ -30,9 +30,9 @@ export default function Hero() {
             <span className={styles.str}>'Bash'</span>,{' '}
             <span className={styles.str}>'Go'</span>],{'\n'}{'  '}
             <span className={styles.prop}>focus</span>:{' '}
-            [<span className={styles.str}>'API Platforms'</span>,{' '}
-            <span className={styles.str}>'Automation'</span>,{' '}
-            <span className={styles.str}>'AI Tooling'</span>],{'\n'}{'  '}
+            [<span className={styles.str}>'Platforms'</span>,{' '}
+            <span className={styles.str}>'Security Eng'</span>,{' '}
+            <span className={styles.str}>'AI / MCP'</span>],{'\n'}{'  '}
             <span className={styles.prop}>reqs</span>:{' '}
             <span className={styles.str}>'100M+ / day'</span>,{'\n'}{'  '}
             <span className={styles.prop}>uptime</span>:{' '}

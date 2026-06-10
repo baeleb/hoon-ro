@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const skills = [
   'Python', 'TypeScript', 'Shell / Bash', 'Go',
   'Kubernetes', 'Docker', 'CI/CD', 'REST APIs',
-  'Redis / MemoryDB', 'SQL',
+  'WAF / Edge Security', 'Redis / MemoryDB', 'SQL',
 ];
 
 export default function About() {
@@ -18,9 +18,8 @@ export default function About() {
           <p>
             I&apos;m a software engineer based in Saint Paul, MN, with 4+ years of
             experience building internal API platforms, event-driven automation, and
-            containerized services at Best Buy. My work sits at the intersection of
-            distributed systems, security infrastructure, and AI tooling — governing
-            100M+ daily API requests.
+            containerized services at Best Buy — securing CDN and firewall infrastructure
+            governing 100M+ daily API requests.
           </p>
           <p>
             I got my start through a formally sanctioned red team / blue team exercise
@@ -34,7 +33,9 @@ export default function About() {
             These days I build internal platforms that centralize operations across
             multiple providers, wire up AI agents to live infrastructure via MCP,
             and ship event-driven Slack tooling that turns real-time diagnostics
-            into self-service workflows.
+            into self-service workflows — all while defending against SQL injection,
+            XSS, and DDoS patterns across the full OWASP threat landscape at 100M+
+            request scale.
           </p>
           <p>Technologies I work with daily:</p>
           <ul className={styles.skillList}>
