@@ -6,9 +6,10 @@ export default function Contact() {
       <p className={styles.overline}>04. What&rsquo;s next?</p>
       <h2 className={styles.heading}>Get In Touch</h2>
       <p className={styles.body}>
-        I&rsquo;m currently open to roles where I can build internal platforms,
-        API tooling, and event-driven systems at scale. Whether you have
-        an opportunity or just want to talk shop, I&rsquo;d love to connect.
+        Always happy to connect with fellow engineers, open-source
+        collaborators, or anyone building at the intersection of platforms
+        and infrastructure. Whether you want to talk shop or have something
+        in mind, feel free to reach out.
       </p>
       <a href="mailto:calebhro@gmail.com" className="btn btnPrimary btnLg">
         Say Hello
