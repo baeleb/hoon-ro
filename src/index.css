@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a192f;
+  --bg-light: #112240;
+  --text: #ccd6f6;
+  --text-bright: #e6f1ff;
+  --text-muted: #8892b0;
+  --accent: #64ffda;
+  --accent-dim: rgba(100, 255, 218, 0.08);
+  --border: rgba(100, 255, 218, 0.15);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --max-width: 1100px;
+  --nav-height: 70px;
+  --radius: 4px;
+  --transition: 0.25s ease;
+}
+
+[data-theme='light'] {
+  --bg: #f8f9fc;
+  --bg-light: #ffffff;
+  --text: #2d3748;
+  --text-bright: #1a202c;
+  --text-muted: #718096;
+  --accent: #2b6cb0;
+  --accent-dim: rgba(43, 108, 176, 0.08);
+  --border: rgba(43, 108, 176, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background var(--transition), color var(--transition);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btnPrimary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btnPrimary:hover {
+  background: var(--accent-dim);
+}
+
+.btnOutline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text-muted);
+}
+
+.btnOutline:hover {
+  background: rgba(136, 146, 176, 0.08);
+  border-color: var(--text);
+  color: var(--text-bright);
+}
+
+.btnLg {
+  padding: 18px 36px;
+  font-size: 1rem;
+}
+
+.sectionHeading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.sectionHeading::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--border);
+  flex: 1;
+  margin-top: 4px;
+}
+
+.sectionNum {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,32 @@
+.contact {
+  max-width: 700px;
+  margin: 0 auto 100px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.overline {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 16px;
+}
+
+.body {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
