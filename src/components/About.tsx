@@ -3,7 +3,8 @@ import styles from './About.module.css';
 
 const skills = [
   'Python', 'TypeScript', 'Shell / Bash', 'Go',
-  'Kubernetes', 'Docker', 'Akamai WAF', 'Redis / MemoryDB',
+  'Kubernetes', 'Docker', 'CI/CD', 'REST APIs',
+  'Redis / MemoryDB', 'SQL',
 ];
 
 export default function About() {
@@ -16,9 +17,10 @@ export default function About() {
         <div className={styles.text}>
           <p>
             I&apos;m a software engineer based in Saint Paul, MN, with 4+ years of
-            experience securing enterprise-scale CDN and web application infrastructure
-            at Best Buy. My core focus is WAF policy engineering, bot detection and
-            mitigation, and DoS/DDoS defense across hundreds of millions of daily requests.
+            experience building internal API platforms, event-driven automation, and
+            containerized services at Best Buy. My work sits at the intersection of
+            distributed systems, security infrastructure, and AI tooling — governing
+            100M+ daily API requests.
           </p>
           <p>
             I got my start through a formally sanctioned red team / blue team exercise
@@ -30,9 +32,9 @@ export default function About() {
           </p>
           <p>
             These days I build internal platforms that centralize operations across
-            multiple security providers, wire up AI agents to live infrastructure via MCP,
-            and write event-driven tooling that turns Slack into a real-time security
-            operations console.
+            multiple providers, wire up AI agents to live infrastructure via MCP,
+            and ship event-driven Slack tooling that turns real-time diagnostics
+            into self-service workflows.
           </p>
           <p>Technologies I work with daily:</p>
           <ul className={styles.skillList}>

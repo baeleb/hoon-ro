@@ -6,11 +6,11 @@ export default function Hero() {
       <div className={styles.content}>
         <p className={styles.greeting}>Hi, my name is</p>
         <h1 className={styles.name}>Caleb Ro</h1>
-        <h2 className={styles.tagline}>I secure the edge.</h2>
+        <h2 className={styles.tagline}>I build platforms that scale.</h2>
         <p className={styles.blurb}>
-          Software engineer specializing in CDN security, WAF policy engineering,
-          and bot detection — governing 100M+ daily API requests and defending
-          infrastructure against the full OWASP threat landscape.
+          Software engineer with 4+ years building internal API platforms,
+          event-driven automation, and AI-integrated tooling at enterprise
+          scale — governing 100M+ daily requests.
         </p>
         <div className={styles.cta}>
           <a href="#projects" className="btn btnPrimary">See my work</a>
@@ -23,16 +23,16 @@ export default function Hero() {
             <span className={styles.kw}>const</span>{' '}
             <span className={styles.fn}>caleb</span> = {'{\n'}{'  '}
             <span className={styles.prop}>role</span>:{' '}
-            <span className={styles.str}>'Edge Security'</span>,{'\n'}{'  '}
+            <span className={styles.str}>'Software Engineer'</span>,{'\n'}{'  '}
             <span className={styles.prop}>stack</span>:{' '}
             [<span className={styles.str}>'Python'</span>,{' '}
             <span className={styles.str}>'TS'</span>,{' '}
             <span className={styles.str}>'Bash'</span>,{' '}
             <span className={styles.str}>'Go'</span>],{'\n'}{'  '}
             <span className={styles.prop}>focus</span>:{' '}
-            [<span className={styles.str}>'WAF'</span>,{' '}
-            <span className={styles.str}>'Bot Mitigation'</span>,{' '}
-            <span className={styles.str}>'DDoS'</span>],{'\n'}{'  '}
+            [<span className={styles.str}>'API Platforms'</span>,{' '}
+            <span className={styles.str}>'Automation'</span>,{' '}
+            <span className={styles.str}>'AI Tooling'</span>],{'\n'}{'  '}
             <span className={styles.prop}>reqs</span>:{' '}
             <span className={styles.str}>'100M+ / day'</span>,{'\n'}{'  '}
             <span className={styles.prop}>uptime</span>:{' '}
