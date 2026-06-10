@@ -6,15 +6,18 @@ import RootLayout from './routes/__root';
 import HomePage from './routes/index';
 import './index.css';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    Component: RootLayout,
-    children: [
-      { index: true, Component: HomePage },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      Component: RootLayout,
+      children: [
+        { index: true, Component: HomePage },
+      ],
+    },
+  ],
+  { basename: '/hoon-ro/' },
+);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
