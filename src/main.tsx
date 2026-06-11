@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router';
 import { ThemeProvider } from './context/ThemeContext';
 import RootLayout from './routes/__root';
 import HomePage from './routes/index';
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
       Component: RootLayout,
       children: [
         { index: true, Component: HomePage },
-        { path: '*', Component: HomePage },
+        { path: '*', element: <Navigate to="/" replace /> },
       ],
     },
   ],

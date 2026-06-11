@@ -18,9 +18,9 @@ export default function Nav() {
       <div className={styles.inner}>
         <Link to="/" className={styles.logo}>&lt;CHR /&gt;</Link>
         <ul className={styles.links}>
-          <li><a href="#about" className={styles.link}>About</a></li>
-          <li><a href="#projects" className={styles.link}>Projects</a></li>
-          <li><a href="#contact" className={styles.link}>Contact</a></li>
+          <li><a href="/#about" className={styles.link}>About</a></li>
+          <li><a href="/#projects" className={styles.link}>Projects</a></li>
+          <li><a href="/#contact" className={styles.link}>Contact</a></li>
         </ul>
         <button className={styles.toggle} onClick={toggle} aria-label="Toggle theme">
           {theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'}
