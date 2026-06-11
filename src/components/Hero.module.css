@@ -81,8 +81,10 @@
   .hero {
     flex-direction: column;
     text-align: center;
+    min-height: auto;
     padding-top: 100px;
-    gap: 40px;
+    padding-bottom: 60px;
+    gap: 24px;
   }
   .blurb {
     max-width: none;
