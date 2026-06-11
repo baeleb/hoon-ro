@@ -3,7 +3,7 @@ import styles from './Contact.module.css';
 export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
-      <p className={styles.overline}>04. What&rsquo;s next?</p>
+      <p className={styles.overline}>03. What&rsquo;s next?</p>
       <h2 className={styles.heading}>Get In Touch</h2>
       <p className={styles.body}>
         Always happy to connect with fellow engineers, open-source
