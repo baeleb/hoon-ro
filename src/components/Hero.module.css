@@ -95,6 +95,7 @@
   .codeSnippet {
     font-size: 0.75rem;
     padding: 16px 20px;
+    overflow-x: auto;
   }
 }
 

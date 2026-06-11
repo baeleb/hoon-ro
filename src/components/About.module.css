@@ -96,8 +96,15 @@
     flex-direction: column;
   }
   .imageCol {
-    max-width: 250px;
-    margin: 0 auto;
+    order: -1;
+    max-width: 140px;
+    margin: 0 auto 28px;
+  }
+  .frame::after {
+    transform: translate(8px, 8px);
+  }
+  .frame:hover::after {
+    transform: translate(6px, 6px);
   }
 }
 
