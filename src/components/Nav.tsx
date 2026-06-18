@@ -65,6 +65,12 @@ export default function Nav() {
           <li><a href="/#projects" className={styles.mobileLink} onClick={close}>Projects</a></li>
           <li><a href="/#contact" className={styles.mobileLink} onClick={close}>Contact</a></li>
         </ul>
+        <div className={styles.mobileToggleRow}>
+          <button className={styles.toggle} onClick={toggle} aria-label="Toggle theme">
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+          <span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
+        </div>
       </div>
     </nav>
   );

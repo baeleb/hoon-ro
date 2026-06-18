@@ -76,24 +76,6 @@
   background: var(--accent-dim);
 }
 
-@media (max-width: 768px) {
-  .links {
-    gap: 20px;
-  }
-  .link {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .links {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -156,6 +138,18 @@
   gap: 16px;
 }
 
+.mobileToggleRow {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 .mobileLink {
   font-family: var(--font-mono);
   font-size: 1rem;
@@ -167,4 +161,23 @@
 .mobileLink:hover {
   color: var(--accent);
   text-decoration: none;
+}
+
+/* Media queries at the end so they override base rules */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .inner .toggle {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileMenu {
+    display: none !important;
+  }
 }
