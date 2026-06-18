@@ -86,6 +86,13 @@
     padding-bottom: 60px;
     gap: 24px;
   }
+  .content,
+  .visual {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
   .blurb {
     max-width: none;
   }
