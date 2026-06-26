@@ -1,4 +1,5 @@
 import headshot from '../../images/headshot.jpg';
+import headshotWebp from '../../images/headshot.webp';
 import styles from './About.module.css';
 
 const skills = [
@@ -45,7 +46,10 @@ export default function About() {
         <div className={styles.imageCol}>
           <div className={styles.frame}>
             <div className={styles.placeholder}>
-              <img src={headshot} alt="Caleb Ro" />
+              <picture>
+                <source srcSet={headshotWebp} type="image/webp" />
+                <img src={headshot} alt="Caleb Ro" width={1000} height={666} loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
