@@ -23,11 +23,11 @@ export default function About() {
           </p>
           <p>
             I got my start through a formally sanctioned red team / blue team exercise
-            as an intern — I built an offensive credential-stuffing bot, bypassed existing
-            detection methods, then flipped sides and built the fingerprinting library
-            that defeated it. That library was productionized post-hire and now anchors
-            a multi-provider bot-mitigation pipeline that reduced malicious login attempts
-            by 53%, saving ~45M fraudulent API calls monthly.
+            as an intern — I researched offensive attack patterns against authentication
+            infrastructure, identified gaps in existing defenses, then built the detection
+            library that closed them. That library was productionized post-hire and now
+            anchors a multi-provider bot-mitigation pipeline that reduced malicious login
+            attempts by 53%, saving ~45M fraudulent API calls monthly.
           </p>
           <p>
             These days I build internal platforms that centralize operations across
