@@ -58,6 +58,31 @@
   text-decoration: none;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.iconLink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  text-decoration: none;
+}
+
 .toggle {
   background: none;
   border: 1px solid var(--border);
@@ -168,7 +193,7 @@
   .links {
     display: none;
   }
-  .inner .toggle {
+  .actions {
     display: none;
   }
   .hamburger {
