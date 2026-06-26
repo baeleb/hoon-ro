@@ -14,11 +14,11 @@ export default function HomePage() {
       <Hero />
       <About />
       <section id="projects">
-        <div ref={projectRef} className="reveal" style={{ maxWidth: 'var(--max-width)', margin: '0 auto 160px', padding: '0 24px' }}>
+        <div ref={projectRef} className="reveal" style={{ maxWidth: 'var(--max-width)', margin: '0 auto 160px', padding: '0 var(--gutter)' }}>
           <h2 className="sectionHeading">
             <span className="sectionNum">02.</span> Projects
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 20 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 420px))', gap: 20, justifyContent: 'center' }}>
             {projects.map((p) => (
               <ProjectCard key={p.title} project={p} />
             ))}
