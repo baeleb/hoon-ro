@@ -1,3 +1,4 @@
+import { GitHubIcon, LinkedInIcon, EmailIcon } from './icons';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -14,6 +15,29 @@ export default function Contact() {
       <a href="mailto:caleb@hoon.ro" className="btn btnPrimary btnLg">
         Say Hello
       </a>
+      <div className={styles.socials}>
+        <a
+          href="https://github.com/baeleb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialLink}
+          aria-label="GitHub"
+        >
+          <GitHubIcon size={22} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/calebro"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.socialLink}
+          aria-label="LinkedIn"
+        >
+          <LinkedInIcon size={22} />
+        </a>
+        <a href="mailto:caleb@hoon.ro" className={styles.socialLink} aria-label="Email">
+          <EmailIcon size={22} />
+        </a>
+      </div>
     </section>
   );
 }

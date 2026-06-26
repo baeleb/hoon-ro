@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { useTheme } from '../context/ThemeContext';
+import { GitHubIcon, LinkedInIcon, EmailIcon } from './icons';
 import styles from './Nav.module.css';
 
 export default function Nav() {
@@ -45,9 +46,32 @@ export default function Nav() {
           <li><a href="/#projects" className={styles.link}>Projects</a></li>
           <li><a href="/#contact" className={styles.link}>Contact</a></li>
         </ul>
-        <button className={styles.toggle} onClick={toggle} aria-label="Toggle theme">
-          {theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'}
-        </button>
+        <div className={styles.actions}>
+          <a
+            href="https://github.com/baeleb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.iconLink}
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/calebro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.iconLink}
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon />
+          </a>
+          <a href="mailto:caleb@hoon.ro" className={styles.iconLink} aria-label="Email">
+            <EmailIcon />
+          </a>
+          <button className={styles.toggle} onClick={toggle} aria-label="Toggle theme">
+            {theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'}
+          </button>
+        </div>
         <button
           className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`}
           onClick={() => setMenuOpen((o) => !o)}
@@ -66,6 +90,27 @@ export default function Nav() {
           <li><a href="/#contact" className={styles.mobileLink} onClick={close}>Contact</a></li>
         </ul>
         <div className={styles.mobileToggleRow}>
+          <a
+            href="https://github.com/baeleb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.iconLink}
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/calebro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.iconLink}
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon />
+          </a>
+          <a href="mailto:caleb@hoon.ro" className={styles.iconLink} aria-label="Email">
+            <EmailIcon />
+          </a>
           <button className={styles.toggle} onClick={toggle} aria-label="Toggle theme">
             {theme === 'dark' ? '☀️' : '🌙'}
           </button>
