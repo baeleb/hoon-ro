@@ -1,19 +1,20 @@
 .contact {
   max-width: var(--max-width);
   margin: 0 auto 120px;
-  padding: 0 24px;
+  padding: 0 var(--gutter);
+  text-align: center;
 }
 
 .body {
   max-width: 600px;
+  margin: 0 auto 40px;
   color: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 40px;
 }
 
 .socials {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 16px;
   margin-top: 28px;
 }

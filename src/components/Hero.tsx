@@ -46,55 +46,57 @@ function Stat({ value, decimals = 0, suffix, label, delay }: StatDef & { delay: 
 export default function Hero() {
   return (
     <section id="hero" className={styles.hero}>
-      <div className={styles.content}>
-        <p className={`${styles.greeting} ${styles.revealItem}`} style={{ '--i': 0 } as CSSProperties}>
-          Hi, my name is
-        </p>
-        <h1 className={`${styles.name} ${styles.revealItem}`} style={{ '--i': 1 } as CSSProperties}>
-          Caleb Ro
-        </h1>
-        <h2 className={`${styles.tagline} ${styles.revealItem}`} style={{ '--i': 2 } as CSSProperties}>
-          I build platforms that scale.
-        </h2>
-        <p className={`${styles.blurb} ${styles.revealItem}`} style={{ '--i': 3 } as CSSProperties}>
-          Software engineer with 4+ years building internal API platforms,
-          event-driven automation, and AI-integrated tooling at enterprise
-          scale — governing 100M+ daily requests.
-        </p>
-        <div className={`${styles.cta} ${styles.revealItem}`} style={{ '--i': 4 } as CSSProperties}>
-          <a href="#projects" className="btn btnPrimary">See my work</a>
-          <a href="#contact" className="btn btnOutline">Get in touch</a>
-        </div>
-        <div className={styles.stats}>
-          {stats.map((s, i) => (
-            <Stat key={s.label} {...s} delay={5 + i} />
-          ))}
-        </div>
-      </div>
-
-      <div className={styles.visual}>
-        <div className={styles.window} aria-hidden="true">
-          <div className={styles.titlebar}>
-            <span className={styles.dots}>
-              <i />
-              <i />
-              <i />
-            </span>
-            <span className={styles.filename}>caleb.ts</span>
+      <div className={styles.inner}>
+        <div className={styles.content}>
+          <p className={`${styles.greeting} ${styles.revealItem}`} style={{ '--i': 0 } as CSSProperties}>
+            Hi, my name is
+          </p>
+          <h1 className={`${styles.name} ${styles.revealItem}`} style={{ '--i': 1 } as CSSProperties}>
+            Caleb Ro
+          </h1>
+          <h2 className={`${styles.tagline} ${styles.revealItem}`} style={{ '--i': 2 } as CSSProperties}>
+            I build platforms that scale.
+          </h2>
+          <p className={`${styles.blurb} ${styles.revealItem}`} style={{ '--i': 3 } as CSSProperties}>
+            Software engineer with 4+ years building internal API platforms,
+            event-driven automation, and AI-integrated tooling at enterprise
+            scale — governing 100M+ daily requests.
+          </p>
+          <div className={`${styles.cta} ${styles.revealItem}`} style={{ '--i': 4 } as CSSProperties}>
+            <a href="#projects" className="btn btnPrimary">See my work</a>
+            <a href="#contact" className="btn btnOutline">Get in touch</a>
           </div>
-          <div className={styles.code}>
-            {code.map((line, i) => (
-              <div className={styles.line} key={i}>
-                <span className={styles.ln}>{i + 1}</span>
-                <span className={styles.lc}>
-                  {line.map((tok, j) => (
-                    <span key={j} className={tok.c ? styles[tok.c] : undefined}>
-                      {tok.t}
-                    </span>
-                  ))}
-                </span>
-              </div>
+          <div className={styles.stats}>
+            {stats.map((s, i) => (
+              <Stat key={s.label} {...s} delay={5 + i} />
             ))}
+          </div>
+        </div>
+
+        <div className={styles.visual}>
+          <div className={styles.window} aria-hidden="true">
+            <div className={styles.titlebar}>
+              <span className={styles.dots}>
+                <i />
+                <i />
+                <i />
+              </span>
+              <span className={styles.filename}>caleb.ts</span>
+            </div>
+            <div className={styles.code}>
+              {code.map((line, i) => (
+                <div className={styles.line} key={i}>
+                  <span className={styles.ln}>{i + 1}</span>
+                  <span className={styles.lc}>
+                    {line.map((tok, j) => (
+                      <span key={j} className={tok.c ? styles[tok.c] : undefined}>
+                        {tok.t}
+                      </span>
+                    ))}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
